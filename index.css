@@ -1,0 +1,152 @@
+:root{
+    --primary: #faf7f2;
+    --secondary: white;
+    --heading: #4d8bc4;
+    /* rgb(115, 204, 255) */
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.first{
+    width: 100%;
+    height: 100vh;
+    max-height: 500px;
+    background-color: var(--primary);
+}
+
+.second{
+    width: 100%;
+    height: 100vh;
+    max-height: 500px;
+    background-color: var(--secondary);
+}
+
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    padding-top: 30px;
+    color: var(--heading);
+}
+
+.card{
+    width: 20%;
+    height: 70%;
+    background-color: var(--primary);
+    overflow: hidden;
+    position: relative;
+    border-radius: 5px;
+    margin: 50px;
+}
+
+.card img{
+    width: 30%;
+    padding: 20px 20px;
+}
+
+hr{
+    width: 100%;
+    height: 5px;
+    background-color: yellowgreen;
+    position: absolute;
+    bottom: 0px;
+}
+
+.slider{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.card:hover{
+    transform: scale(1.1,1.1);
+    transition: 0.3s;
+    box-shadow: 0px 0px 10px black;
+}
+
+.card:hover hr{
+    background-color: rgb(0, 200, 255);
+    transition: 0.3s;
+}
+
+.third{
+    width: 100%;
+    height: 150vh;
+    max-height: 800px;
+    background-color: var(--secondary);
+    position: relative;
+}
+
+.card-2{
+    width: 15%;
+    height: 40%;
+    min-width: 200px;
+    background-color: var(--primary);
+    overflow: hidden;
+    position: relative;
+    border-radius: 5px;
+    margin: 50px;
+}
+
+button{
+    max-width: 100px;
+    border-radius: 20px;
+    border: 1px soild black;
+    border-color: var(--heading);
+    color:var(--heading);
+    background-color: white;
+    box-shadow: 5px 3px 0px  var(--heading);
+    font-size: 15px;
+    padding: 10px;
+}
+
+.card-2 div{
+    background-color: var(--secondary);
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    clip-path: circle(20% at 30% 30%);
+}
+
+content{
+    position: relative;
+    top: 25%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    justify-content: space-evenly;
+}
+
+button,footer{
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom:0px;
+}
+
+.slider-2{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: left;
+    flex-wrap: wrap;
+}
+
+heading{
+    font-size: 30px;
+    top: 50px;
+}
+
+.description{
+    width: 50%;
+    margin: 20px 0px;
+}
+
+.content{
+    margin-top: 100px;
+    margin-left: 50px;
+}
