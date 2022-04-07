@@ -10,6 +10,11 @@
     padding: 0;
 }
 
+html,body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 /*the code is not adaptive, hence had to add styling to html and body thus removing the responsiveness*/
 
 /* html {
@@ -292,7 +297,7 @@ navbar button{
 
 .logo{
     width: 100%;
-    height: 10vh;
+    height: 30px;
     /* max-height: 800px; */
     display: flex;
     justify-content: space-between;
