@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;1,200&family=Open+Sans:wght@300;400&display=swap');
+
 :root{
     --primary: #faf7f2;
     --secondary: white;
@@ -11,12 +13,13 @@
 }
 
 html,body{
-    max-width: 100%;
+    /* max-width: 100%; */
     min-width: min-content;
     overflow-x: hidden;
+    max-width: 800px;
+    margin: auto;
 }
 
-/*the code is not adaptive, hence had to add styling to html and body thus removing the responsiveness*/
 
 /* html {
     display: table;
@@ -33,12 +36,52 @@ body {
     margin-right: auto;
 } */
 
+.sideNav{
+    display: none;
+    height: 100%;
+    width: 300px;
+    z-index: 2;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    background-color: black;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding: 50px;
+    opacity: 1;
+}
+
+.sideNav a{
+    padding: 50px;
+    display: block;
+    font-size: 50px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.sideNav a:hover{
+    text-decoration: underline;
+}
+
+.sideNav button{
+    margin: 70px;
+    width: 100%;
+    transform: scale(1.7,1.7);
+}
+
+.close{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
 .first{
     width: 100%;
     height: 100%;
     overflow: hidden;
     /* max-height: 500px; */
     background-color: var(--primary);
+
 }
 
 /* .background{
@@ -64,7 +107,7 @@ body {
 }
 
 h1{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     text-align: center;
     padding-top: 30px;
     color: var(--heading);
@@ -73,7 +116,7 @@ h1{
 .card{
     width: 250px;
     height: 300px;
-    background-color: var(--primary);
+    background-color: var(--secondary);
     overflow: hidden;
     position: relative;
     border-radius: 5px;
@@ -81,9 +124,14 @@ h1{
     min-width: 200px;
 }
 
+.card q{
+    padding:15px;
+}
+
 .card img{
     width: 30%;
     padding: 20px 20px;
+    filter: grayscale(100%);
 }
 
 hr{
@@ -122,32 +170,49 @@ hr{
     position: relative;
 }
 
+B{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.card-2 p{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card-2 footer{
+    font-family: 'Montserrat', sans-serif;
+    font-size: smaller;
+}
 
 .subContent{
     position: relative;
+    max-width: 800px;
+    margin: auto;
 }
 
-
 .image1{
-    display: inline;
+    /* display: inline; */
     height: 200px;
-    position: absolute;
-    top: -50px;
-    margin-left: 60%;
+    /* position: absolute; */
+    /* top: -50px; */
+    /* margin-left: 60%; */
+    float: right;
 }
 
 .image2{
-    width: 300px;
-    position: absolute;
-    margin-left: 60%;
-    top:60px;
+    height: 300px;
+    /* width: 300px; */
+    /* position: absolute; */
+    /* margin-left: 60%; */
+    float: right;
+    /* top:60px; */
 }
 
 .image3{
-    width: 500px;
-    position: absolute;
-    margin-left: 40%;
-    top:-50px;
+    height: 300px;
+    /* position: absolute; */
+    /* margin-left: 40%; */
+    /* top:-50px; */
+    float: right;
 }
 
 .card-2{
@@ -212,13 +277,16 @@ button,footer{
 }
 
 heading{
-    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
     top: 50px;
 }
 
 .description{
-    width: 50%;
+    font-family: 'Montserrat', sans-serif;
+    width: 70%;
     margin: 20px 0px;
+    font-size: larger;
 }
 
 .content{
@@ -232,6 +300,7 @@ heading{
     max-height: 800px;
     background-color: var(--primary);
     position: relative;
+    padding-bottom: 100px;
 }
 
 .fifth{
@@ -261,12 +330,14 @@ heading{
 li{
     display: inline-block;
     margin: 20px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 ul{
     display: flex;
     justify-content: right;
     align-items: center;
+    font-weight: 800;
 }
 
 a{
@@ -287,21 +358,22 @@ navbar button{
 .sixth{
     width: 100%;
     height: 100%;
-    min-height: 200px;
+    min-height: 300px;
     background-color: var(--secondary);
 }
 
 .logo img{
     height: 100%;
     opacity: 0.3;
+    margin: 30px;
 }
 
 .logo{
     width: 100%;
-    height: 30px;
+    height: 70px;
     /* max-height: 800px; */
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .sixth h1{
@@ -340,9 +412,9 @@ nav{
 
 .social{
     position: relative;
-    margin-top: 100px;
+    margin-top: 150px;
     width: 100%;
-    height: 10vh;
+    height: 150px;
     display: flex;
     justify-content: center;
     filter: grayscale(100%)
@@ -350,7 +422,7 @@ nav{
 
 .social img{
     height: 50%;
-    margin: 20px;
+    margin: 50px;
     opacity: 0.3;
 }
 
@@ -372,22 +444,66 @@ q{
     display: block;
     font-style: italic;
     font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
 }
 
 pre{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: small;
     position: absolute;
     bottom: 20px;
     right: 20px;
 }
 
-@media screen and (max-width: 800px){
-    .image2,.image3{
-        transform: scale(0.5,0.5);
-    }
+navbar div{
+    width: 99%;
+    display: flex;
+    justify-content: right;
 }
 
-@media screen and (min-width: 801px){
-    .image3{
-        margin-left: 50%;
+.hm{
+    position: absolute;
+    /* display: none; */
+    margin-right: 30px;
+    margin-top: 30px;
+}
+
+@media screen and (max-width:800px){
+    navbar ul{
+        visibility: hidden;
+    }
+    .hm{
+        display: block;
+        transform: scale(6,6);
+    }
+
+    .card{
+        width: 30%;
+        height: 350px;
+    }
+
+    .subContent{
+       transform: scale(1.5,1.5);
+       padding-bottom: 50px;
+    }
+
+    .card-2{
+        width: 30%;
+        /* height: 30vh; */
+    }
+
+    .fourth{
+        z-index: 1;
+    }
+
+    h1{
+        font-size: 60px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .sixth h1{
+        padding-bottom: 0;
     }
 }

@@ -3,23 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <section class="first">
         <!-- <div class="background"><img src="img/school.jpg" alt=""></div> -->
+        <div class="sideNav">
+                <a href="#" class="close" onclick="closeNav()">&#10006;</a>
+                <a href="#">School</a>
+                <a href="#">Parents</a>
+                <a href="#">Pricing</a>
+                <a href="#">Login</a>
+                <button>Sign Up</button>
+            
+        </div>
         <navbar>
+            <div><span class="hm" onclick="openNav()">&#9776;</span></div>
             <ul>
                 <li><a href="#">School</a></li>
                 <li><a href="#">Parents</a></li>
                 <li><a href="#">Pricing</a></li>
+                <li>|</li>
                 <li><a href="#">Login</a></li>
                 <li><button>Sign Up</button></li>
             </ul>
         </navbar>
-        <div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/4mrE5zgEvt4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="video"><iframe width="100%" height="315" src="https://www.youtube.com/embed/4mrE5zgEvt4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </section>
     <section class="second">
@@ -60,16 +71,15 @@ Aspire Public School</pre>
         <h1>Why Securely ?</h1>
         <div class="content">
         <div class="subContent">
+            <img class="image1" src="img/image1.png" alt="">
         <heading>Monitoring / Visibility</heading>
-        <p class="description">The Internet is overwhelming enough for adults, so imagine how it must be for kids.
+        <p class="description">
+            The Internet is overwhelming enough for adults, so imagine how it must be for kids.
             It’s so easy to wander down a rabbit hole, only to end up at a site that leaves
             abad taste. Securly, a cloud-based filter deployed in minutes, helps schools create
             a more age-appropriate Internet by categorizing over a million unsafe sites.
         </p>
-        <div class="image">
-            <img class="image1" src="img/image1.png" alt="">
-            </div>
-        </div>
+       
         </div>
         <div class="slider-2">
         <div class="card-2">
@@ -121,6 +131,8 @@ Aspire Public School</pre>
     <section class="fourth">
         <h1>Why Securely?</h1>
         <div class="content">
+        <div class="subContent">
+        <img class="image2" src="img/image2.png" alt="">
         <heading>Bully Detection & Self Harm</heading>
         <p class="description">The Internet is overwhelming enough for adults, so imagine how it must be for kids.
             It’s so easy to wander down a rabbit hole, only to end up at a site that leaves
@@ -128,7 +140,7 @@ Aspire Public School</pre>
             a more age-appropriate Internet by categorizing over a million unsafe sites.
         </p>
         </div>
-        <img class="image2" src="img/image2.png" alt="">
+        </div>
         <div class="slider-2">
         <div class="card-2">
             <div></div>
@@ -156,7 +168,10 @@ Aspire Public School</pre>
     </section>
     <section class="fifth">
         <h1>Why Securely ?</h1>
+        
         <div class="content">
+        <div class="subContent">
+        <img src="img/image3.png" alt="" class="image3">
         <heading>At Home Settings</heading>
         <p class="description">The Internet is overwhelming enough for adults, so imagine how it must be for kids.
             It’s so easy to wander down a rabbit hole, only to end up at a site that leaves
@@ -164,7 +179,7 @@ Aspire Public School</pre>
             a more age-appropriate Internet by categorizing over a million unsafe sites.
         </p>
         </div>
-        <img src="img/image3.png" alt="" class="image3">
+        </div>
         <div class="slider-2">
         <div class="card-2">
             <div></div>
@@ -224,6 +239,16 @@ Aspire Public School</pre>
         <footer>© Copyright Secury Inc, 2016
             ‘San Jose, CA</footer>
     </section>
-<script src="index.js"></script>
+<script>
+    function openNav() {
+        document.querySelector('.sideNav').style.display="block"
+    document.querySelector('.sideNav').style.opacity="1";
+}
+
+function closeNav() {
+    document.querySelector('.sideNav').style.display="none"
+    document.querySelector('.sideNav').style.opacity="0";
+}
+</script>
 </body>
 </html>
